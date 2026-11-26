@@ -197,7 +197,7 @@
           "name": "¿Puedo tomarlas con mi pareja?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Las clases me parecen individuales, y ahí está su valor. Si los dos están muy interesados en aprender, lo podemos platicar. Escríbeme y lo vemos."
+            "text": "Las clases son individuales, y ahí está su valor. Si los dos están muy interesados en aprender, lo podemos platicar. Escríbeme y lo vemos."
           }
         },
         {
@@ -217,7 +217,38 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body { position: relative; }
-    .bsd { position: absolute; top: 10px; right: 20px; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.65rem; letter-spacing: 1px; color: #c8c8c8; user-select: none; z-index: 20; }
+    .bsd { position: absolute; top: 10px; right: 20px; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.65rem; letter-spacing: 1px; color: #c8c8c8; user-select: none; z-index: 30; }
+
+    /* Footer unificado del ecosistema */
+    .ecosystem-footer { padding: 65px 24px 90px 24px; background-color: #ffffff; border-top: 1px solid #eaeaea; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 1.05rem; line-height: 1.7; color: #1a1a1a; }
+    .eco-footer-grid { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: 1.7fr 1fr 1.15fr 1fr; gap: 40px; text-align: left; }
+    @media (max-width: 900px) { .eco-footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; } }
+    @media (max-width: 600px) { .eco-footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
+
+    .eco-footer-col h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: #777; margin-top: 0; margin-bottom: 18px; font-weight: 700; }
+    .eco-footer-col p { color: #444; margin: 0; font-size: 1.02rem; text-align: left; }
+    @media (max-width: 600px) { .eco-footer-col p { text-align: center; } }
+
+    .eco-footer-col ul { list-style: none; padding: 0; margin: 0; }
+    .eco-footer-col ul li { margin-bottom: 12px; }
+    .eco-footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #e5e5e5; transition: all 0.3s; }
+    .eco-footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
+    .eco-footer-col ul li a.current-location { color: #d32f2f !important; border-bottom: 1px solid #f9ebeb; }
+    .eco-footer-col ul li a.current-location:hover { border-bottom: 1px solid #d32f2f; }
+
+    .eco-footer-socials { display: flex; gap: 16px; margin-top: 22px; flex-wrap: wrap; }
+    @media (max-width: 600px) { .eco-footer-socials { justify-content: center; } }
+    .eco-footer-socials a { color: #555; text-decoration: none; font-size: 0.98rem; font-weight: 500; }
+    .eco-footer-socials a:hover { color: #000; }
+
+    .eco-footer-legal { max-width: 1040px; margin: 35px auto 0 auto; padding-top: 22px; border-top: 1px solid #f2f2f2; text-align: center; }
+    .eco-footer-legal details.legal { display: inline-block; text-align: left; max-width: 820px; width: 100%; }
+    .eco-footer-legal details.legal summary { text-align: center; cursor: pointer; font-size: 0.92rem; color: #666; list-style: none; }
+    .eco-footer-legal details.legal summary::-webkit-details-marker { display: none; }
+    .eco-footer-legal .legal-body { margin-top: 18px; font-size: 0.9rem; color: #555; line-height: 1.65; }
+
+    .eco-footer-bottom { max-width: 1040px; margin: 22px auto 0 auto; padding-top: 18px; border-top: 1px solid #f6f6f6; text-align: center; font-size: 0.92rem; color: #888; }
+    .eco-footer-bottom p { text-align: center; margin: 0 auto; display: block; }
   </style>
 </head>
 <body>
@@ -320,7 +351,7 @@
           <p>Soy Sergio Lubezky, fotógrafo mexicano. Mi obra se ha expuesto en México y en el extranjero, incluyendo galerías en Tokio y Nagoya, y fui de los primeros fotógrafos en el mundo en usar drones para hacer fotografía aérea.</p>
           <p>Estudié de cerca con maestros de la fotografía mexicana como Pedro Meyer, Elsa Medina y Yvonne Venegas, y desde hace años acompaño a otros fotógrafos en México, Cuba y Colombia.</p>
           <p>Creo que aprender fotografía no es acumular datos técnicos, sino aprender a mirar. Por eso doy clases individuales: platicamos de lo que quieres lograr y trabajamos a tu ritmo, de tú a tú.</p>
-          <p>También soy estratega, director y creador multidisciplinario; exploro cómo la percepción, los sistemas complejos y la sensibilidad humana se articulan para transformar la incertidumbre en claridad y acción. <a href="https://lubezky.com/">Conoce más de mi trabajo en lubezky.com</a>.</p>
+          <p>Estratega, director y creador multidisciplinario: además de la fotografía, exploro cómo la percepción, los sistemas complejos y la sensibilidad humana se articulan en la estrategia, la tecnología y la música. <a href="https://lubezky.com/">Conoce más de mi trabajo en lubezky.com</a>.</p>
         </div>
       </div>
     </section>
@@ -336,4 +367,135 @@
           <a href="img/aves.webp" target="_blank" rel="noopener"><img src="img/t-aves.webp" width="640" height="480" loading="lazy" decoding="async" alt="Parvada de aves en vuelo contra un cielo azul con nubes, entre dos edificios"></a>
           <a href="img/solrocas.webp" target="_blank" rel="noopener"><img src="img/t-solrocas.webp" width="640" height="480" loading="lazy" decoding="async" alt="Sol poniéndose sobre el mar, con rocas en primer plano iluminadas por la luz dorada"></a>
           <a href="img/escalera.webp" target="_blank" rel="noopener"><img src="img/t-escalera.webp" width="640" height="480" loading="lazy" decoding="async" alt="Escalera estrecha entre muros azules y desgastados, con luz que entra desde arriba"></a>
-          <a href="img/malecon.webp" target="_blank" rel="noopener"><img src="img/t-malecon.webp" width="640" height="480" loading="lazy" decoding="async" alt="Pescador de espaldas en un muelle de madera frente
+          <a href="img/malecon.webp" target="_blank" rel="noopener"><img src="img/t-malecon.webp" width="640" height="480" loading="lazy" decoding="async" alt="Pescador de espaldas en un muelle de madera frente al mar, con cañas y mochilas, bajo un cielo rosado"></a>
+        </div>
+        <p class="gallery-link"><a href="https://www.instagram.com/sergiolubezky/">Más fotos en Instagram: @sergiolubezky</a></p>
+      </div>
+    </section>
+
+    <section class="section section-border" id="despues">
+      <div class="wrap">
+        <h2>Cuando quieras ir más lejos</h2>
+        <p>Estas clases son el punto de partida. Si ya tienes bases y quieres desarrollar una mirada propia, en Coach de Foto ofrezco coaching para fotógrafos intermedios y avanzados, y viajes fotográficos en grupos pequeños.</p>
+        <p class="more-actions">
+          <a class="btn btn-line" href="https://coachdefoto.com/">Conocer Coach de Foto</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-border" id="preguntas">
+      <div class="wrap">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq">
+          <details>
+            <summary>¿Necesito una cámara profesional?</summary>
+            <p>No. Puedes tomar las clases con la cámara que tengas, incluido tu celular.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto cuestan las clases?</summary>
+            <p>Escríbeme por WhatsApp y te cuento. Primero platicamos de lo que buscas.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto duran?</summary>
+            <p>Son tres sesiones de 1 hora 30 minutos cada una.</p>
+          </details>
+          <details>
+            <summary>¿Dónde son las clases?</summary>
+            <p>En la zona de Santa Fe, Ciudad de México, o por Zoom. Tú eliges la modalidad que te acomode mejor.</p>
+          </details>
+          <details>
+            <summary>¿Necesito saber algo antes de empezar?</summary>
+            <p>No. Si es la primera vez que usas una cámara, justo para eso son estas clases.</p>
+          </details>
+          <details>
+            <summary>¿Puedo tomarlas con mi pareja?</summary>
+            <p>Las clases son individuales, y ahí está su valor. Si los dos están muy interesados en aprender, lo podemos platicar. Escríbeme y lo vemos.</p>
+          </details>
+          <details>
+            <summary>¿Y después de las tres sesiones?</summary>
+            <p>Si quieres seguir, en <a href="https://coachdefoto.com/">coachdefoto.com</a> ofrezco coaching para fotógrafos intermedios y avanzados, y viajes fotográficos en grupos pequeños.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border contact" id="contacto">
+      <div class="wrap">
+        <h2>Cuéntame qué quieres lograr</h2>
+        <p>Escríbeme por WhatsApp y platicamos de tus fotos, tu cámara y lo que quieres aprender.</p>
+        <a class="btn" href="https://wa.me/525575030660?text=Hola%20Sergio%2C%20me%20interesa%20tomar%20clases%20de%20fotograf%C3%ADa.%20%C2%BFMe%20cuentas%20c%C3%B3mo%20funcionan%3F">Escríbeme por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ecosystem-footer">
+    <div class="eco-footer-grid">
+      <div class="eco-footer-col">
+        <h3>Sergio Lubezky A.</h3>
+        <p>Estratega, director y creador multidisciplinario. Exploro cómo la percepción, los sistemas complejos y la sensibilidad humana se articulan para transformar la incertidumbre en claridad y acción.</p>
+        <div class="eco-footer-socials">
+          <a href="https://wa.me/525575030660?text=Hola%20Sergio%2C%20me%20interesa%20tomar%20clases%20de%20fotograf%C3%ADa.%20%C2%BFMe%20cuentas%20c%C3%B3mo%20funcionan%3F">WhatsApp</a>
+          <a href="https://www.instagram.com/sergiolubezky/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/talleresycursosdefoto/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/slubezky" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <div class="eco-footer-col">
+        <h3>En este sitio</h3>
+        <ul>
+          <li><a href="#sesiones">Tres Sesiones</a></li>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#trabajo">Mi Trabajo</a></li>
+          <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+          <li><a href="https://lubezky.com/mapa/">Mi Huella</a></li>
+          <li><a href="mailto:info@clasesdefoto.com">info@clasesdefoto.com</a></li>
+        </ul>
+      </div>
+      <div class="eco-footer-col">
+        <h3>Universo Personal</h3>
+        <ul>
+          <li><a href="https://lubezky.com/">Lubezky.com</a></li>
+          <li><a href="https://elmismobarco.com/">El Mismo Barco</a></li>
+          <li><a href="https://unnuevopuntodevista.com/">Un Nuevo Punto de Vista</a></li>
+          <li><a href="https://lomioeslafoto.com/">Lo Mío es la Foto</a></li>
+          <li><a href="https://clasesdefoto.com/" class="current-location">Clases de Foto</a></li>
+          <li><a href="https://coachdefoto.com/">Coach de Foto</a></li>
+          <li><a href="https://musica.sergiolubezky.com/">Música</a></li>
+        </ul>
+      </div>
+      <div class="eco-footer-col">
+        <h3>Práctica Directiva</h3>
+        <ul>
+          <li><a href="https://inteligencia.com/">Inteligencia</a></li>
+          <li><a href="https://liderazgointerino.com/">Liderazgo Interino</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="eco-footer-legal">
+      <details class="legal" id="privacidad">
+        <summary>Transparencia y políticas de privacidad</summary>
+        <div class="legal-body">
+          <p><strong>PRIMERO.- RESPONSABLE DE LA TRANSPARENCIA:</strong><br>Sergio Lubezky Américus, con domicilio en Fernando Espinoza 55, Colonia Santa Fe, Ciudad de México, C.P. 01210, México, emite el presente documento para informar a los usuarios sobre las políticas de navegación en nuestro sitio web, en cumplimiento con los principios de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP).</p>
+          <p><strong>SEGUNDO.- POLÍTICA DE NO RECOPILACIÓN DE DATOS PERSONALES:</strong><br>Sergio Lubezky Américus informa de manera categórica que no recaba, almacena, trata ni transfiere ningún tipo de dato personal de los usuarios a través de este sitio web. Nuestra plataforma es de carácter exclusivamente informativo. Debido a esto:</p>
+          <ul>
+            <li>No contamos con formularios de registro, contacto ni suscripciones.</li>
+            <li>No solicitamos nombres, correos electrónicos, teléfonos, RFC ni datos de localización.</li>
+            <li>No empleamos herramientas informáticas ni cookies de seguimiento para perfilar o identificar a nuestros visitantes.</li>
+          </ul>
+          <p><strong>TERCERO.- ENLACES A TERCEROS O CONTACTO EXTERNO:</strong><br>En caso de que el usuario decida comunicarse de manera voluntaria con Sergio Lubezky Américus a través de medios externos (como mensajes de WhatsApp o correos electrónicos directos), dichos datos se tratarán única y exclusivamente para dar respuesta a su consulta directa, destruyéndose de inmediato de nuestros registros una vez concluida la comunicación. Este sitio contiene enlaces a WhatsApp, Instagram, Facebook y otros sitios de terceros, que se rigen por sus propios avisos de privacidad, y está alojado en GitHub Pages, que puede registrar datos técnicos de conexión, como la dirección IP, conforme a su propia política.</p>
+          <p><strong>CUARTO.- MEDIOS PARA ACLARACIONES:</strong><br>Cualquier duda o comentario respecto a esta política de transparencia puede ser dirigida al correo electrónico: <a href="mailto:info@clasesdefoto.com">info@clasesdefoto.com</a>.<br>Asimismo, se hace del conocimiento público que la autoridad encargada de vigilar el cumplimiento de los derechos de privacidad en el país es la Secretaría Anticorrupción y Buen Gobierno (SABG).</p>
+          <p><strong>QUINTO.- ACTUALIZACIÓN.</strong><br>Esta política se mantiene vigente y bajo revisión continua para garantizar que la plataforma no vulnere la privacidad de ningún usuario.<br>Última actualización: Octubre de 2026.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="eco-footer-bottom">
+      <p>&copy; 2026 Sergio Lubezky A. Fotografías &copy; Sergio Lubezky, todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="btn wa-float" href="https://wa.me/525575030660?text=Hola%20Sergio%2C%20me%20interesa%20tomar%20clases%20de%20fotograf%C3%ADa.%20%C2%BFMe%20cuentas%20c%C3%B3mo%20funcionan%3F">Escríbeme por WhatsApp</a>
+</body>
+</html>
